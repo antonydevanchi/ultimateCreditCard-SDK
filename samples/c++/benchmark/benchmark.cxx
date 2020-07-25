@@ -2,10 +2,10 @@
 * File author: Mamadou DIOP (Doubango Telecom, France).
 * License: For non commercial use only.
 * Source code: https://github.com/DoubangoTelecom/ultimateCreditCard-SDK
-* WebSite: https://www.doubango.org/webapps/alpr/
+* WebSite: https://www.doubango.org/webapps/credit-card-ocr/
 */
 
-// More info about benchmark application: https://www.doubango.org/SDKs/ccard/docs/Benchmark.html
+// More info about benchmark application: https://www.doubango.org/SDKs/credit-card-ocr/docs/Benchmark.html
 /*
 	https://github.com/DoubangoTelecom/ultimateCreditCard/blob/master/SDK_dist/samples/c++/benchmark/README.md
 	Usage: 
@@ -203,7 +203,7 @@ int main(int argc, char *argv[])
 	}
 	const std::chrono::high_resolution_clock::time_point timeEnd = std::chrono::high_resolution_clock::now();
 	const double elapsedTimeInMillis = std::chrono::duration_cast<std::chrono::duration<double >>(timeEnd - timeStart).count() * 1000.0;
-	ULTCCARD_SDK_PRINT_INFO("Elapsed time (ALPR) = [[[ %lf millis ]]]", elapsedTimeInMillis);
+	ULTCCARD_SDK_PRINT_INFO("Elapsed time (CCARD) = [[[ %lf millis ]]]", elapsedTimeInMillis);
 
 	// Print latest result
 	const std::string& json_ = result.json();
